@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>THE DOORMASTER</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			* {
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+			iframe {
+				width: 100%;
+			}
+			body {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-image: url('bg.png');
+				background-attachment: fixed;
+				background-size: cover;
+				text-align: center;
+				background-position: center center;
+				box-shadow: inset 0 0 120px #000, inset 0 0 80px #000, inset 0 0 40px #000;
+			}
+			iframe {
+				display: inline-block;
+				position: relative;
+				width: 100%;
+				max-width: 540px;
+				top: 50%;
+				transform: translateY(-50%);
+				padding: 1rem;
+				box-sizing: border-box;
+				box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.1), inset 0 0 80px rgba(0, 0, 0, 0.1), inset 0 0 40px #000;
+				border-radius: 2rem;
+			}
+			.video {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.video iframe {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="video">
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/L4Jnl5RXROg?si=1UQClYkoB2xNZEff&amp;controls=0&autoplay=1"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			></iframe>
+		</div>
+	</body>
+</html>
+
